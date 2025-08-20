@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .main {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      background-color: #d5e1ef;
+      height: 100vh;
+    }
+    .box{
+      background-color: #ffffff;
+      border-radius: 10px;
+      height: 320px;
+      width: 220px;
+    }
+    .inner-box{
+      border-radius: 10px;
+      height:190px;
+      width: 200px;
+      margin: 10px;
+      /* background-color: #257eff; */
+    }
+    .b{
+      color: #4f514d;
+    }
+    .p{
+      font-size:13px;
+      color: #949890;
+    }
   </style>
 </head>
-<body>
 
-  Improve your front-end skills by building projects
+<body class ="main">
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div  class ="box">
+    <div >
+      <img class ="inner-box" src="./images/image-qr-code.png"  >
+    </div>
+    <div style ="text-align: center; margin: 2px; padding-left: 7px;padding-right: 7px;">
+      <b class ="b">Improve Your front-end skills by building Projects</b>
+    </div>
+    <div style ="text-align: center;
+   margin: 3px; padding-left: 7px;padding-right: 7px;">
+      <p class ="p">Scan the QR code to visit Frontend Mentor and take your coding to the next level.</p>
+    </div>
+    
   </div>
+
+
 </body>
+
 </html>
